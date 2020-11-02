@@ -24,4 +24,5 @@ So with this setup the request flow will look like this:
 #### When all this done, feel free to run the runMe file and get the results :)
 
 ## Expected results:
+![alt text](https://github.com/tpaz1/Mongo-app/blob/main/app/Screenshot%20from%202020-11-02%2022-34-29.png)
 
