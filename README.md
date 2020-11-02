@@ -8,14 +8,14 @@ In this tutorial we are going to `deploy` a `MongoDB` and `Mongo Express` applic
 * `Deployment` - two Deployments [one](https://github.com/tpaz1/Mongo-app/blob/main/app/02-mongoDB-deployment.yaml) for the `MongoDB` app and [one](https://github.com/tpaz1/Mongo-app/blob/main/app/05-mongo-exp-deployment.yaml) for the `Mongo Express` app. in the Deployment files we are gonna reference both secret and configMap files using `Environment variables` in order to access our DB in a secure way.
 * [`Service` type `LoadBalancer`](https://github.com/tpaz1/Mongo-app/blob/main/app/06-mongo-exp-service.yaml) - Extarnal service that will allow external requests to our Mongo Express pod.
 
-so with this setup the request flow will look like this:
-1. the request comes from the browser.
-2. request goes to the External service of the Mongo Express which will than forward it to the Mongo Express pod.
-3. pod will then connect to the internal service of MongoDB (thats basically the DB url from our configMap).
-4. the service will forward the request to the MongoDB pod where it will authenticate using the credentials (from the secret).
+So with this setup the request flow will look like this:
+1. The request comes from the browser.
+2. Request goes to the `External service` of the `Mongo Express` which will than forward it to the `Mongo Express` `pod`.
+3. `Pod` will then connect to the `internal service` of `MongoDB` (thats basically the DB url from our `configMap`).
+4. The service will forward the request to the `MongoDB` pod where it will authenticate using the credentials (from the `secret`).
 
 ### Pre requirements
-* running cluster or`minikube` [installed](https://minikube.sigs.k8s.io/docs/start/)
+* Running cluster or`minikube` [installed](https://minikube.sigs.k8s.io/docs/start/)
 * `kubectl` [installed](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
 
