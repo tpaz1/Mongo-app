@@ -1,1 +1,3 @@
-kubectl kustomize k8s | kubectl apply -f -
+kubectl kustomize app | kubectl apply -f -
+sleep 45
+minikube service mongo-exp-service
