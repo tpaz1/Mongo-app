@@ -16,7 +16,7 @@ so with this setup the request flow will look like this:
 
 ### Pre requirements
 * running cluster or`minikube` [installed](https://minikube.sigs.k8s.io/docs/start/)
-* kubectl [installed](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+* `kubectl` [installed](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
 
 
