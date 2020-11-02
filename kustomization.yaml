@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- 01-mongoDB-secret.yaml
+- 02-mongoDB-deployment.yaml
+- 03-mongoDB-service.yaml
+- 04-configmap.yaml
+- 05-mongo-exp-deployment.yaml
+- 06-mongo-exp-service.yaml
