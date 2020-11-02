@@ -21,6 +21,7 @@ So with this setup the request flow will look like this:
 
 
 
-#### When all this done, feel free to run the runMe file and go check localhost:8080 for the results :)
+#### When all this done, feel free to run the runMe file and get the results :)
 
 ## Expected results:
+
